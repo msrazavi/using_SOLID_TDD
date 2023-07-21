@@ -28,35 +28,21 @@ class Rectangle(Shape):
         return self._width * self._height
 
 
-class Square(Rectangle):
+class Square(Shape):
     def __init__(self, side):
-        super().__init__(side, side)
+        self._side = side
 
     @property
     def side(self):
-        return self.width
+        return self._side
 
     @side.setter
     def side(self, value):
-        self.width = value
-        self.height = value
+        self._side = value
+
+    def compute_area(self):
+        return self.side * self.side
 
 
 if __name__ == '__main__':
-    my_rectangle = Rectangle(2, 5)
-    print('width = ', my_rectangle.width)
-    print('height = ', my_rectangle.height)
-    print('area = ', my_rectangle.compute_area())
-    my_rectangle.height = 4
-    my_rectangle.width = 1
-    print('dimensions changed.')
-    print('width = ', my_rectangle.width)
-    print('height = ', my_rectangle.height)
-    print('area = ', my_rectangle.compute_area())
-    my_square = Square(5)
-    print('square side = ', my_square.side)
-    print('area = ', my_square.compute_area())
-    my_square.side = 10
-    print('side changed')
-    print('square side = ', my_square.side)
-    print('area = ', my_square.compute_area())
+    pass
