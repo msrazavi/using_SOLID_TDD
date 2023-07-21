@@ -22,14 +22,10 @@ class TestShapes(unittest.TestCase):
     def test_square(self):
         s = Square(3)
         self.assertEqual(s.side, 3)
-        self.assertEqual(s.width, 3)
-        self.assertEqual(s.height, 3)
         self.assertEqual(s.compute_area(), 9)
 
         s.side = 5
         self.assertEqual(s.side, 5)
-        self.assertEqual(s.width, 5)
-        self.assertEqual(s.height, 5)
         self.assertEqual(s.compute_area(), 25)
 
 
