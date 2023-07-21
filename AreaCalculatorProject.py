@@ -53,10 +53,10 @@ if __name__ == '__main__':
     print('width = ', my_rectangle.width)
     print('height = ', my_rectangle.height)
     print('area = ', my_rectangle.compute_area())
-    my_sqaure = Square(5)
-    print('square side = ', my_sqaure.side)
-    print('area = ', my_sqaure.compute_area())
-    my_sqaure.side = 10
+    my_square = Square(5)
+    print('square side = ', my_square.side)
+    print('area = ', my_square.compute_area())
+    my_square.side = 10
     print('side changed')
-    print('square side = ', my_sqaure.side)
-    print('area = ', my_sqaure.compute_area())
+    print('square side = ', my_square.side)
+    print('area = ', my_square.compute_area())
